@@ -1,10 +1,12 @@
 import "./App.css";
-import Typographys from "./components/Typographys";
+// import Typographys from "./components/Typographys";
+import Buttons from "./components/Buttons";
 
 function App() {
   return (
     <div className="App">
-      <Typographys />
+      {/* <Typographys /> */}
+      <Buttons />
     </div>
   );
 }
