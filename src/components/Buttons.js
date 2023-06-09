@@ -1,5 +1,11 @@
 import React from "react";
-import { Stack, Button, Typography, IconButton } from "@mui/material";
+import {
+  Stack,
+  Button,
+  Typography,
+  IconButton,
+  ButtonGroup,
+} from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 
 const Buttons = () => {
@@ -106,6 +112,26 @@ const Buttons = () => {
         <IconButton aria-label="send" color="primary" size="medium">
           <SendIcon />
         </IconButton>
+      </Stack>
+
+      {/* Button Group */}
+      <Stack direction="row">
+        <ButtonGroup variant="contained">
+          <Button>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
+      </Stack>
+      <Stack direction="row">
+        <ButtonGroup
+          variant="contained"
+          orientation="vertical"
+          size="medium"
+          color="success">
+          <Button>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
       </Stack>
     </Stack>
   );
